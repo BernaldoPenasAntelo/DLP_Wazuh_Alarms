@@ -17,3 +17,12 @@ In order for us to test this, we will want to create a test directory and set th
 
 Right click:
 Properties → Security → Advanced → Auditing → Click Add → Select Principal → Everyone
+
+
+# 3.-We need to configure the Wazuh agent to monitor the previous directory:
+
+/var/ossec/etc/ossec.conf
+
+<syscheck>
+    <directories check_all="yes" whodata="yes">C:\tmp</directories>
+</syscheck>
