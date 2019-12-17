@@ -23,6 +23,6 @@ Properties → Security → Advanced → Auditing → Click Add → Select Princ
 
 /var/ossec/etc/ossec.conf
 
-/<syscheck>
-/    <directories check_all="yes" whodata="yes">C:\tmp</directories>
-/</syscheck>
+'''<syscheck>
+    <directories check_all="yes" whodata="yes">C:\tmp</directories>
+</syscheck>'''
